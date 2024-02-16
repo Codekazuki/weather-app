@@ -1,9 +1,8 @@
-import { Card, ListItem, Stack } from "@mui/material";
-
 import "./App.css";
 import Buttons from "./Buttons";
 import TimeAndDate from "./TimeAndDate";
 import Countries from "./Countries";
+import Details from "./Details";
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
       <Countries />
       <Buttons />
       <TimeAndDate />
+      <Details />
     </div>
   );
 }
