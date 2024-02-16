@@ -1,15 +1,7 @@
-import {
-  Button,
-  Card,
-  Container,
-  ListItem,
-  Stack,
-  Typography,
-} from "@mui/material";
-
-import Grid from "@mui/material/Unstable_Grid2";
+import { Card, ListItem, Stack } from "@mui/material";
 
 import "./App.css";
+import Buttons from "./Buttons";
 
 function App() {
   return (
@@ -22,25 +14,8 @@ function App() {
           <ListItem>Helsinki</ListItem>
           <ListItem>Harare</ListItem>
         </Stack>
-        <Grid
-          container
-          spacing={{ xs: 2, md: 3 }}
-          columns={{ xs: 4, sm: 8, md: 12 }}
-        >
-          <Grid xs={8}>
-            <Typography>xs=8</Typography>
-          </Grid>
-          <Grid xs={4}>
-            <Button>xs=4</Button>
-          </Grid>
-          <Grid xs={4}>
-            <Typography>xs=4</Typography>
-          </Grid>
-          <Grid xs={8}>
-            <Container>below</Container>
-          </Grid>
-        </Grid>
       </Card>
+      <Buttons />
     </div>
   );
 }
