@@ -1,4 +1,11 @@
-import { Button, Card, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  Container,
+  ListItem,
+  Stack,
+  Typography,
+} from "@mui/material";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
@@ -8,6 +15,13 @@ function App() {
   return (
     <div className='App'>
       <Card sx={{ backgroundColor: "red" }}>
+        <Stack direction='row' spacing={4} sx={{ color: "white" }}>
+          <ListItem>Lagos</ListItem>
+          <ListItem>London</ListItem>
+          <ListItem>Tokyo</ListItem>
+          <ListItem>Helsinki</ListItem>
+          <ListItem>Harare</ListItem>
+        </Stack>
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}
@@ -23,7 +37,7 @@ function App() {
             <Typography>xs=4</Typography>
           </Grid>
           <Grid xs={8}>
-            <Button>xs=8</Button>
+            <Container>below</Container>
           </Grid>
         </Grid>
       </Card>
