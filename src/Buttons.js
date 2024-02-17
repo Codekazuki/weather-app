@@ -1,4 +1,4 @@
-import { Container, Stack, TextField, Typography } from "@mui/material";
+import { Stack, TextField, Typography } from "@mui/material";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
@@ -6,11 +6,11 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 const Buttons = () => {
   return (
     <div>
-      <Container>
+      <Stack direction='row' justifyContent='center' margin=' 2rem '>
         <Stack direction='row'>
           <TextField placeholder='search.....' />
 
-          <Stack direction='row'>
+          <Stack direction='row' sx={{ margin: " 0 4rem", padding: "1rem" }}>
             <SearchIcon />
 
             <AddLocationAltIcon fontSize='large' />
@@ -21,7 +21,7 @@ const Buttons = () => {
             <Typography> °F </Typography>
           </Stack>
         </Stack>
-      </Container>
+      </Stack>
     </div>
   );
 };
