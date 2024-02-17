@@ -7,15 +7,19 @@ const Buttons = () => {
   return (
     <div>
       <Container>
-        <TextField placeholder='search.....' />
         <Stack direction='row'>
-          <SearchIcon />
+          <TextField placeholder='search.....' />
 
-          <AddLocationAltIcon fontSize='large' />
-        </Stack>
-        <Stack direction='row'>
-          <Typography> °C | </Typography>
-          <Typography> °F </Typography>
+          <Stack direction='row'>
+            <SearchIcon />
+
+            <AddLocationAltIcon fontSize='large' />
+          </Stack>
+
+          <Stack direction='row'>
+            <Typography> °C | </Typography>
+            <Typography> °F </Typography>
+          </Stack>
         </Stack>
       </Container>
     </div>
