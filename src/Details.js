@@ -14,8 +14,8 @@ const Details = () => {
         <ThunderstormTwoToneIcon />
         <Typography>87°</Typography>
         <Stack>
-          <Typography>heolkdn</Typography>
-          <Typography>hello</Typography>
+          <Typography>Humidity</Typography>
+          <Typography>wind speed</Typography>
           <Typography>hello</Typography>
         </Stack>
       </Stack>
