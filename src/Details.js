@@ -1,6 +1,6 @@
 import React from "react";
 import ThunderstormTwoToneIcon from "@mui/icons-material/ThunderstormTwoTone";
-import { Stack, Typography } from "@mui/material";
+import { Container, Stack, Typography } from "@mui/material";
 
 const Details = () => {
   return (
@@ -13,12 +13,28 @@ const Details = () => {
       >
         <ThunderstormTwoToneIcon />
         <Typography>87°</Typography>
-        <Stack>
+        <Stack
+          sx={{
+            padding: "2rem",
+            color: "red",
+          }}
+        >
           <Typography>Humidity</Typography>
           <Typography>wind speed</Typography>
           <Typography>hello</Typography>
         </Stack>
       </Stack>
+      <Container
+        sx={{
+          padding: "5rem",
+          color: "red",
+        }}
+      >
+        <Typography>eeeee</Typography>
+        <Typography>eeeee</Typography>
+        <Typography>eeeee</Typography>
+        <Typography>eeeee</Typography>
+      </Container>
     </div>
   );
 };

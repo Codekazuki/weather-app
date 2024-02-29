@@ -6,12 +6,7 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 const Buttons = () => {
   return (
     <div>
-      <Stack
-        direction='row'
-        justifyContent='center'
-        margin=' 2rem '
-        backgroundColor='green'
-      >
+      <Stack direction='row' justifyContent='center' margin=' 1rem  0'>
         <Stack direction='row'>
           <TextField placeholder='search.....' />
 
