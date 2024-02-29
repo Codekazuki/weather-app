@@ -9,13 +9,15 @@ const Details = () => {
         direction='row'
         justifyContent='space-evenly'
         padding={5}
-        sx={{ width: "100vw" }}
+        sx={{ width: "100vw", backgroundColor: "green" }}
       >
-        <ThunderstormTwoToneIcon />
+        <ThunderstormTwoToneIcon
+          fontSize='large'
+          sx={{ color: "info", height: "50%" }}
+        />
         <Typography>87°</Typography>
         <Stack
           sx={{
-            padding: "2rem",
             color: "red",
           }}
         >
@@ -24,17 +26,6 @@ const Details = () => {
           <Typography>hello</Typography>
         </Stack>
       </Stack>
-      <Container
-        sx={{
-          padding: "5rem",
-          color: "red",
-        }}
-      >
-        <Typography>eeeee</Typography>
-        <Typography>eeeee</Typography>
-        <Typography>eeeee</Typography>
-        <Typography>eeeee</Typography>
-      </Container>
     </div>
   );
 };
